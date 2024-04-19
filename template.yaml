@@ -160,7 +160,7 @@ Resources:
         Type: AWS::SQS::Queue
         DeletionPolicy: Retain
         Properties:
-            #QueueName: ct_configrecorder_override_cf
+            QueueName: ct_configrecorder_override_cf
             VisibilityTimeout: 180
             DelaySeconds: 5
             KmsMasterKeyId: alias/aws/sqs
